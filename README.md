@@ -7,7 +7,8 @@ In de toekomst kan de API worden uitgebreid om mogelijk informatie van openbare 
 ## Features
 In deze tab ga ik uitleggen wat mijn API kan.
 - GET endpoints op de tabellen videogames, genres, platformen en ontwikkelaars. Deze kunnen ook via een specifieke id opgeroepen worden voor als je bv. een specifiek record wilt hebben.
-- PUT endpoints op de tabellen videogames, genres, platformen en ontwikkelaars. Deze kunnen in BULK gedaan worden via een lijst.
+- POST endpoints op de tabellen videogames, genres, platformen en ontwikkelaars. Deze kunnen in BULK gedaan worden via een lijst.
+- PUT endpoints op alle tabellen met een POST endpoint
 - DELETE endpoints op de tabellen videogames, genres, platformen en ontwikkelaars. Records kunnen specifiek verwijderd wordne met hun id
 - Authenticatie op de DELETE endpoints via basic auth.
 - Mariadb als databank met volumes gedefinieerd in docker voor persistentie.
@@ -38,6 +39,9 @@ In deze tab ga ik uitleggen wat mijn API kan.
 ![DELETE_videogames_by_id_02](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/68fe0b20-fb5d-4d78-a24c-4c713eb3a1eb)
 ![DELETE_videogames_by_id_03](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/d7ee071e-132b-4772-9ce5-aabe416bf3ac)
 
+##### PUT videogames by id:
+![Screenshot 2024-01-02 at 22-28-43 FastAPI - Swagger UI](https://github.com/r0901651/eindproject-api-development-videogames/assets/95848828/b8a844bc-90c8-4ff5-ba5b-6db2b6969fb8)
+
 
 
 ##### GET genres:
@@ -59,6 +63,9 @@ In deze tab ga ik uitleggen wat mijn API kan.
 ![DELETE_genres_by_id_01](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/1ac10eaa-ad00-4dec-b45f-5af53e541ec4)
 ![DELETE_genres_by_id_02](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/153d6ebc-c706-4091-bd4b-ff469e218686)
 ![DELETE_genres_by_id_03](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/8ecc07c1-e25e-4e28-b44e-7a711d6e5a71)
+
+##### PUT genres by id:
+![Screenshot 2024-01-02 at 22-29-01 FastAPI - Swagger UI](https://github.com/r0901651/eindproject-api-development-videogames/assets/95848828/5f381bcc-3061-429a-b300-ba53ea5400b0)
 
 
 
@@ -82,6 +89,9 @@ In deze tab ga ik uitleggen wat mijn API kan.
 ![DELETE_ontwikkelaars_by_id_02](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/1e45d4c6-6bf8-4886-9e5e-0c1a978edfa7)
 ![DELETE_ontwikkelaars_by_id_03](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/5562ad4d-a98e-470b-a94b-c6ab8a042abe)
 
+##### PUT ontwikkelaars by id:
+![Screenshot 2024-01-02 at 22-29-14 FastAPI - Swagger UI](https://github.com/r0901651/eindproject-api-development-videogames/assets/95848828/13c9c16c-103d-4066-bb4b-b412ceb5647a)
+
 
 
 ##### GET platformen:
@@ -104,6 +114,8 @@ In deze tab ga ik uitleggen wat mijn API kan.
 ![DELETE_platformen_by_id_02](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/d4428f38-2fc7-42cf-8f9c-313edeebae0e)
 ![DELETE_platformen_by_id_03](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/63572eae-4236-47cc-b494-47f1651eba39)
 
+##### PUT platformen by id:
+![Screenshot 2024-01-02 at 22-29-29 FastAPI - Swagger UI](https://github.com/r0901651/eindproject-api-development-videogames/assets/95848828/b591f853-a74c-458e-8751-e83f9471b9bb)
 
 
 
@@ -182,3 +194,7 @@ In deze tab ga ik uitleggen wat mijn API kan.
 
 ### Okteto:
 ![Octeto](https://github.com/r0901651/basisproject-api-development-videogames/assets/95848828/e146424b-3b3a-484a-ac75-eea43fe5f80a)
+
+
+### API testing workflow:
+![Screenshot 2024-01-02 at 22-33-59 changed readme · r0901651_eindproject-api-development-videogames@6e93e84](https://github.com/r0901651/eindproject-api-development-videogames/assets/95848828/6355c8ca-0a0d-47f7-bca4-ae9ffd045bb1)
