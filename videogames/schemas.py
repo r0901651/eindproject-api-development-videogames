@@ -69,4 +69,5 @@ class Platform(PlatformBase):
         orm_mode = True
 
 
+
 Videogame.update_forward_refs()

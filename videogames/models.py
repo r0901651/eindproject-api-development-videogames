@@ -3,10 +3,10 @@
 from sqlalchemy import Column, ForeignKey, Integer, Float, String, Date
 from sqlalchemy.orm import relationship
 
-from database import Base
+from database import VideogamesBase
+from database import UsersBase
 
-
-class Videogame(Base):
+class Videogame(VideogamesBase):
     __tablename__ = "videogames"
 
     id = Column(Integer, primary_key=True, unique=True, index=True, autoincrement=True, nullable=False)
@@ -23,7 +23,7 @@ class Videogame(Base):
     platform = relationship("Platform", back_populates="videogames")
 
 
-class Genre(Base):
+class Genre(VideogamesBase):
     __tablename__ = "genres"
 
     id = Column(Integer, primary_key=True, unique=True, index=True, autoincrement=True, nullable=False)
@@ -32,7 +32,7 @@ class Genre(Base):
     videogames = relationship("Videogame", back_populates="genre")
 
 
-class Ontwikkelaar(Base):
+class Ontwikkelaar(VideogamesBase):
     __tablename__ = "ontwikkelaars"
 
     id = Column(Integer, primary_key=True, unique=True, index=True, autoincrement=True, nullable=False)
@@ -42,7 +42,7 @@ class Ontwikkelaar(Base):
     videogames = relationship("Videogame", back_populates="ontwikkelaar")
 
 
-class Platform(Base):
+class Platform(VideogamesBase):
     __tablename__ = "platformen"
 
     id = Column(Integer, primary_key=True, unique=True, index=True, autoincrement=True, nullable=False)
