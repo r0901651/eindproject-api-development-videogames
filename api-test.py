@@ -1,7 +1,6 @@
 import requests
 import json
 
-# Replace this URL with the actual URL where your FastAPI app is running
 BASE_URL = "http://127.0.0.1:8000"
 
 def test_create_videogames():
