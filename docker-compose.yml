@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  videogame-api-service:
+    image: mjimsas/videogames
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: games
+      MYSQL_DATABASE: videogames
+      MYSQL_USER: admin-videogames
+      MYSQL_PASSWORD: games
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
