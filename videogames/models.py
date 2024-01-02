@@ -4,7 +4,6 @@ from sqlalchemy import Column, ForeignKey, Integer, Float, String, Date
 from sqlalchemy.orm import relationship
 
 from database import VideogamesBase
-from database import UsersBase
 
 class Videogame(VideogamesBase):
     __tablename__ = "videogames"
