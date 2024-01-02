@@ -1,5 +1,3 @@
-# Klaar (kan uitbereiden worden)
-
 from sqlalchemy import Column, ForeignKey, Integer, Float, String, Date
 from sqlalchemy.orm import relationship
 

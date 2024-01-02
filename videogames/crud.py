@@ -1,4 +1,3 @@
-# uitbereiding ? nog niet af !!!!!
 from sqlalchemy.orm import Session, joinedload
 from models import Videogame, Genre, Ontwikkelaar, Platform
 from schemas import VideogameCreate, GenreCreate, OntwikkelaarCreate, PlatformCreate

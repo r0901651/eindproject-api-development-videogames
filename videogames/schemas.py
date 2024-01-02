@@ -1,5 +1,3 @@
-# Nog niet af !!!!!!!!!!!!
-
 from pydantic import BaseModel
 from datetime import date
 from decimal import Decimal

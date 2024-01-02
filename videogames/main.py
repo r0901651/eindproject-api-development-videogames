@@ -1,4 +1,3 @@
-# uitbereiden ? nog niet af !!!!!
 from fastapi import FastAPI, HTTPException, status, Depends, Query
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from sqlalchemy.orm import Session
