@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   videogame-api-service:
-    image: mjimsas/videogames
+    image: mjimsas/videogames:1.0
     ports:
       - "8000:8000"
     depends_on:
