@@ -27,6 +27,20 @@ def get_videogamesdb():
         videogamesdb.close()
 
 
+def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)):
+
+    username = "admin@videogames.com"
+    password = "games"
+
+    if credentials.username != username or credentials.password != password:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect email or password",
+            headers={"WWW-Authenticate": "Basic"},
+        )
+    return True
+
+
 # POST method for creating a Videogame
 @app.post("/videogames/", response_model=List[schemas.Videogame])
 def create_videogames(videogame: List[schemas.VideogameCreate], db: Session = Depends(get_videogamesdb)):
